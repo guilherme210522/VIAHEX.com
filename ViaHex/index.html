@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIAHEX - Seis Caminhos para o Mundo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-name">
+        <img src="logo.png" alt="logo" />
+        <h1>VIAHEX</h1>
+      </div>
+      <p>Os seis caminhos para o mundo. Venha voar conosco!</p>
+    </header>
+
+    <nav>
+      <a href="#about">Sobre Nós</a>
+      <a href="#services">Serviços</a>
+      <a href="#locations">Destinos</a>
+      <a href="#team">Nossa Equipe</a>
+      <a href="#contact">Contato</a>
+    </nav>
+
+    <main>
+      <audio id="fly" loop>
+        <source src="fly.mp3" type="audio/mpeg" />
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+
+      <button
+        onclick="flyStart()"
+        onload="document.getElementById('fly').volume = 0.0"
+        class="fly"
+      >
+        <img src="music.webp" alt="fly" />
+      </button>
+
+      <section id="about">
+        <h2>Sobre a VIAHEX</h2>
+        <p>
+          Na VIAHEX, acreditamos que cada viagem é um caminho único. Com nosso
+          nome derivado do latim "Via" (caminho) e do grego "Hex" (seis),
+          oferecemos seis caminhos distintos para explorar o mundo.
+        </p>
+        <img src="asset-aviao.svg" alt="avião" class="aviao-1" />
+      </section>
+
+      <section id="services">
+        <h2>Serviços</h2>
+        <p>Oferecemos uma variedade de pacotes de viagem, incluindo:</p>
+
+        <ul class="services-cards">
+          <li class="service-card">Pacotes Culturais</li>
+          <li class="service-card">Experiências Gastronômicas</li>
+          <li class="service-card">Viagens de Aventura</li>
+          <li class="service-card">Relaxamento e Bem-estar</li>
+          <li class="service-card">Luxo e Conforto</li>
+          <li class="service-card">Turismo Sustentável</li>
+        </ul>
+      </section>
+
+      <section id="locations" class="locations">
+        <h2>Promoções De Verão</h2>
+        <div class="grid-container">
+          <div class="card">
+            <img src="portugal.jpg" alt="Portugal" />
+            <div class="card-content">
+              <h3>Portugal</h3>
+              <h4>Restaurantes</h4>
+              <ul>
+                <li>Belcanto - Lisboa</li>
+                <li>O Paparico - Porto</li>
+              </ul>
+              <h4>Hotéis</h4>
+              <ul>
+                <li>Six Senses Douro Valley - Lamego (€150/noite)</li>
+                <li>Bairro Alto Hotel - Lisboa (€200/noite)</li>
+              </ul>
+              <h4>Passagens</h4>
+              <ul>
+                <li>Voos para Lisboa a partir de €150 (ida e volta)</li>
+              </ul>
+              <h4>Locais de Passeio</h4>
+              <ul>
+                <li>Torre de Belém - Lisboa</li>
+                <li>Mosteiro dos Jerónimos - Lisboa</li>
+                <li>Ponte Dom Luís I - Porto</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="italia.jpg" alt="Itália" />
+            <div class="card-content">
+              <h3>Itália</h3>
+              <h4>Restaurantes</h4>
+              <ul>
+                <li>Osteria Francescana - Módena</li>
+                <li>Da Vittorio - Bérgamo</li>
+              </ul>
+              <h4>Hotéis</h4>
+              <ul>
+                <li>Hotel Danieli - Veneza (€180/noite)</li>
+                <li>Il San Pietro di Positano - Positano (€250/noite)</li>
+              </ul>
+              <h4>Passagens</h4>
+              <ul>
+                <li>Voos para Roma a partir de €200 (ida e volta)</li>
+              </ul>
+              <h4>Locais de Passeio</h4>
+              <ul>
+                <li>Coliseu - Roma</li>
+                <li>Museus Vaticanos - Roma</li>
+                <li>Torre de Pisa - Pisa</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="alemanha.jpg" alt="Alemanha" />
+            <div class="card-content">
+              <h3>Alemanha</h3>
+              <h4>Restaurantes</h4>
+              <ul>
+                <li>Restaurant Vendôme - Bergisch Gladbach</li>
+                <li>Aqua - Wolfsburg</li>
+              </ul>
+              <h4>Hotéis</h4>
+              <ul>
+                <li>Schloss Elmau - Krün (€160/noite)</li>
+                <li>Hotel Adlon Kempinski - Berlim (€220/noite)</li>
+              </ul>
+              <h4>Passagens</h4>
+              <ul>
+                <li>Voos para Berlim a partir de €180 (ida e volta)</li>
+              </ul>
+              <h4>Locais de Passeio</h4>
+              <ul>
+                <li>Portão de Brandemburgo - Berlim</li>
+                <li>Castelo de Neuschwanstein - Baviera</li>
+                <li>Museu Pergamon - Berlim</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="grecia.avif" alt="Grécia" />
+            <div class="card-content">
+              <h3>Grécia</h3>
+              <h4>Restaurantes</h4>
+              <ul>
+                <li>Funky Gourmet - Atenas</li>
+                <li>Spondi - Atenas</li>
+              </ul>
+              <h4>Hotéis</h4>
+              <ul>
+                <li>Canaves Oia Hotel - Santorini (€140/noite)</li>
+                <li>King George - Atenas (€180/noite)</li>
+              </ul>
+              <h4>Passagens</h4>
+              <ul>
+                <li>Voos para Atenas a partir de €170 (ida e volta)</li>
+              </ul>
+              <h4>Locais de Passeio</h4>
+              <ul>
+                <li>Acrópole - Atenas</li>
+                <li>Parthenon - Atenas</li>
+                <li>Ilhas Cíclades - Santorini</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="reino_unido.webp" alt="Reino Unido" />
+            <div class="card-content">
+              <h3>Reino Unido</h3>
+              <h4>Restaurantes</h4>
+              <ul>
+                <li>The Ledbury - Londres</li>
+                <li>Restaurant Gordon Ramsay - Londres</li>
+              </ul>
+              <h4>Hotéis</h4>
+              <ul>
+                <li>The Savoy - Londres (€250/noite)</li>
+                <li>Claridge's - Londres (€300/noite)</li>
+              </ul>
+              <h4>Passagens</h4>
+              <ul>
+                <li>Voos para Londres a partir de €180 (ida e volta)</li>
+              </ul>
+              <h4>Locais de Passeio</h4>
+              <ul>
+                <li>Big Ben - Londres</li>
+                <li>Torre de Londres</li>
+                <li>Museu Britânico - Londres</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="espanha.jpg" alt="Espanha" />
+            <div class="card-content">
+              <h3>Espanha</h3>
+              <h4>Restaurantes</h4>
+              <ul>
+                <li>El Celler de Can Roca - Girona</li>
+                <li>Asador Etxebarri - Atxondo</li>
+              </ul>
+              <h4>Hotéis</h4>
+              <ul>
+                <li>Hotel Alfonso XIII - Sevilha (€160/noite)</li>
+                <li>Hotel Ritz - Madrid (€220/noite)</li>
+              </ul>
+              <h4>Passagens</h4>
+              <ul>
+                <li>Voos para Madrid a partir de €160 (ida e volta)</li>
+              </ul>
+              <h4>Locais de Passeio</h4>
+              <ul>
+                <li>Sagrada Família - Barcelona</li>
+                <li>Alhambra - Granada</li>
+                <li>Parque del Retiro - Madrid</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+<body>
+
+    <h2>Pacotes</h2>
+
+    <div class="container">
+      <div class="carde">
+          <div class="card-body">
+              <h2 class="card-title">Portugal - Lisboa e Porto (7 dias)</h2>
+              <ul>
+                  <li>Inclui passagem de ida e volta</li>
+                  <li>7 noites de hospedagem</li>
+                  <li>Passeios em Lisboa e Porto</li>
+                  <li>R$ 7.800 por pessoa</li>
+                  <li>Até 24x no cartão</li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="carde">
+          <div class="card-body">
+              <h2 class="card-title">Itália - Roma, Florença e Veneza (10 dias)</h2>
+              <ul>
+                  <li>Inclui passagem de ida e volta</li>
+                  <li>10 noites de hospedagem</li>
+                  <li>Passeios em Roma, Florença e Veneza</li>
+                  <li>R$ 11.500 por pessoa</li>
+                  <li>Até 24x no cartão</li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="carde">
+          <div class="card-body">
+              <h2 class="card-title">Alemanha - Berlim e Munique (8 dias)</h2>
+              <ul>
+                  <li>Inclui passagem de ida e volta</li>
+                  <li>8 noites de hospedagem</li>
+                  <li>Passeios em Berlim e Munique</li>
+                  <li>R$ 9.200 por pessoa</li>
+                  <li>Até 24x no cartão</li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="carde">
+          <div class="card-body">
+              <h2 class="card-title">Grécia - Atenas e Santorini (8 dias)</h2>
+              <ul>
+                  <li>Inclui passagem de ida e volta</li>
+                  <li>8 noites de hospedagem</li>
+                  <li>Passeios em Atenas e Santorini</li>
+                  <li>R$ 10.000 por pessoa</li>
+                  <li>Até 24x no cartão</li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="carde">
+          <div class="card-body">
+              <h2 class="card-title">Reino Unido - Londres e Edimburgo (9 dias)</h2>
+              <ul>
+                  <li>Inclui passagem de ida e volta</li>
+                  <li>9 noites de hospedagem</li>
+                  <li>Passeios em Londres e Edimburgo</li>
+                  <li>R$ 12.000 por pessoa</li>
+                  <li>Até 24x no cartão</li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="carde">
+          <div class="card-body">
+              <h2 class="card-title">Espanha - Madri e Barcelona (7 dias)</h2>
+              <ul>
+                  <li>Inclui passagem de ida e volta</li>
+                  <li>7 noites de hospedagem</li>
+                  <li>Passeios em Madri e Barcelona</li>
+                  <li>R$ 9.800 por pessoa</li>
+                  <li>Até 24x no cartão</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+
+      </section>
+
+      <section id="team">
+        <h2>Nossa Equipe</h2>
+        <p>Conheça os especialistas que tornam suas viagens possíveis.</p>
+        <p><li>- Guilherme Alcântara: Técnico de informática / Jurídico </li></p>
+        <p><li> - Isabely Teixeira: Recursos humanos</li></p>
+        <p><li> - Kamilly Vitoria: Vendas</li></p>
+        <p><li> - Letícia Oliveira: Administradora</li></p>
+        <p><li> - Pollyanna Melo: Marketing</li></p>
+      </section>
+
+      <section id="contact">
+        <h2>Contato</h2>
+        <p>
+          Entre em contato conosco para planejar sua próxima viagem dos sonhos!
+        </p>
+        <p><li>- (11)99821-3263</li></p>
+        <p><li>- ViaHex@gmail.com</li></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 VIAHEX - Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="modal-overlay">
+      <div class="close-button">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 18L18 6M6 6L18 18"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="container"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      })
+    </script>
+  </body>
+</html>
